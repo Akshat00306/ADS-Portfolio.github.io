@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Akshat Sankalpura - Resume</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9f9;
+      color: #222;
+      transition: all 0.3s ease-in-out;
+      display: flex;
+      min-height: 100vh;
+    }
+
+    .dark-mode {
+      background-color: #121212;
+      color: #eee;
+    }
+
+    /* Sidebar Image Container */
+    .sidebar {
+      width: 140px;
+      background-color: #ffffff;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    .dark-mode .sidebar {
+      background-color: #1e1e1e;
+    }
+
+    .profile-img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .content {
+      flex: 1;
+      padding: 30px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .theme-toggle-container {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 1000;
+    }
+
+    #theme-toggle {
+      padding: 8px 16px;
+      background-color: #007acc;
+      border: none;
+      color: white;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 0.9rem;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    #theme-toggle:hover {
+      background-color: #005f99;
+      transform: scale(1.05);
+    }
+
+    .dark-mode #theme-toggle {
+      background-color: #2196f3;
+    }
+
+    header {
+      margin-bottom: 30px;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: #007acc;
+    }
+
+    .dark-mode header h1 {
+      color: #64b5f6;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      color: #555;
+    }
+
+    .dark-mode header p {
+      color: #ccc;
+    }
+
+    section {
+      margin-bottom: 30px;
+    }
+
+    section h2 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+      border-bottom: 2px solid #007acc;
+      display: inline-block;
+    }
+
+    .dark-mode section h2 {
+      border-color: #64b5f6;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      gap: 10px;
+    }
+
+    .skills li {
+      background-color: #e0f7fa;
+      padding: 6px 12px;
+      border-radius: 20px;
+      font-size: 0.9rem;
+    }
+
+    .dark-mode .skills li {
+      background-color: #37474f;
+      color: #fff;
+    }
+
+    .item {
+      margin-top: 15px;
+    }
+
+    .item h3 {
+      font-size: 1.2rem;
+      margin-bottom: 5px;
+      color: #333;
+    }
+
+    .dark-mode .item h3 {
+      color: #ddd;
+    }
+
+    .item .date {
+      font-size: 0.9rem;
+      color: #777;
+      margin-bottom: 10px;
+    }
+
+    .dark-mode .item .date {
+      color: #aaa;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        flex-direction: column;
+      }
+
+      .sidebar {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 10px;
+      }
+
+      .content {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Toggle Button -->
+  <div class="theme-toggle-container">
+    <button id="theme-toggle">🌙 Dark Mode</button>
+  </div>
+
+  <!-- Sidebar with Profile Image -->
+  <div class="sidebar">
+    <img src="https://avatars.githubusercontent.com/u/138359826?v=4" alt="Akshat Sankalpura" class="profile-img" />
+  </div>
+
+  <!-- Main Resume Content -->
+  <div class="content">
+    <header>
+      <h1>Akshat Sankalpura</h1>
+      <p>Web Developer | Data Science Enthusiast | Open Source Contributor</p>
+    </header>
+
+    <section>
+      <h2>About Me</h2>
+      <p>
+        I'm a passionate and results-driven computer science student with a strong interest in web technologies, AI/ML, and open-source. Currently pursuing my B.Tech, I'm focused on building impactful solutions through code.
+      </p>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <ul class="skills">
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript</li>
+        <li>React</li>
+        <li>Python</li>
+        <li>Firebase</li>
+        <li>Git & GitHub</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Experience</h2>
+      <div class="item">
+        <h3>Web Developer Intern – VibranceAI Innovations</h3>
+        <p class="date">June 2025 – Aug 2025</p>
+        <ul>
+          <li>Built responsive web pages using React, HTML, CSS.</li>
+          <li>Integrated Firebase for real-time database features.</li>
+          <li>Collaborated in an agile environment with GitHub version control.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <div class="item">
+        <h3>B.Tech in Computer Science</h3>
+        <p class="date">2022 – 2026</p>
+        <p>Charusat University, Gujarat</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <div class="item">
+        <h3>U Are Able – Sign Learning App</h3>
+        <p>Built an accessibility-focused app that helps deaf & mute users learn sign language. Integrated TensorFlow, Flutter, and Firebase.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>Email: akshatsankalpura@example.com</p>
+      <p>GitHub: github.com/akshatsankalpura</p>
+      <p>LinkedIn: linkedin.com/in/akshatsankalpura</p>
+    </section>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const toggle = document.getElementById("theme-toggle");
+      toggle.addEventListener("click", () => {
+        document.body.classList.toggle("dark-mode");
+        toggle.textContent = document.body.classList.contains("dark-mode")
+          ? "🌞 Light Mode"
+          : "🌙 Dark Mode";
+      });
+    });
+  </script>
+</body>
+</html>
